@@ -1,0 +1,270 @@
+body {
+    background-color: #011a20;
+    color: #fff;
+}
+
+.cabecalho {
+    height: 80px;
+    background-color: #011a20;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    border-bottom: 1px solid #282828;
+}
+
+.cabecalho .logo {
+    display: flex;
+    gap: 15px;
+}
+
+.cabecalho .logo .logo-do-site {
+    max-height: 100px;
+}
+
+.cabecalho .logo .logo-escrita {
+    max-height: 100px;
+}
+
+.cabecalho .menu {
+    display: flex;
+    gap: 30px;
+}
+
+.cabecalho .menu li a {
+    padding: 30px;
+    color: #e8e8e8;
+    font-weight: bolder;
+    font-size: 15px;
+    font-family: 'Chalet';
+}
+
+.cabecalho .menu li a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.home {
+    display: flex;
+    position: relative;
+    min-height: calc(100 - 80px);
+}
+
+.home::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, .85), rgba(0, 0, 0, .7)35%, transparent 65%);
+}
+
+.home .imagem-fundo {
+    width: 100%;
+    object-fit: cover;
+}
+
+.home .informacoes {
+    position: absolute;
+    z-index: 1;
+    min-height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    padding: 80px 80px 80px 170px;
+    max-width: 780px;
+}
+
+.home .informacoes img {
+    max-width: 150px;
+}
+
+.home .informacoes .sobre-o-site {
+    display: flex;
+    gap: 32px;
+}
+
+.home .informacoes .sobre-o-site .logo-unifacig{
+    max-height: 130px;
+}
+
+.home .informacoes .titulo {
+    font-family: 'ChaletComprime';
+    font-size: 55px;
+}
+
+.home .informacoes .texto {
+    font-family: 'Chalet';
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.btn-funcoes{
+    background-color: rgba(255, 255, 255, .1 );
+    border: 0.5px solid #fff;
+    border-radius: 4px;
+    font-family: 'ChaletComprime';
+    font-size: 28px;
+    text-align: center;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    width: 50%;
+    transition: all .3s ease-in;
+}
+
+.btn-plataforma-caes, .btn-plataforma-gatos{
+    color: #fff;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 20px;
+    align-items: center;
+    text-transform: uppercase;
+    transition: all .3s ease-in;
+    border: 0,5px solid black;
+    background-color: #000;
+
+}
+.btn-plataforma-caes, .btn-plataforma-gatos img{
+    position: inherit
+}
+
+.btn-funcoes:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.secoes .img-secoes {
+    width: 270px;
+}
+
+.secoes {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
+    align-items: center;
+}
+
+.secoes .titulo {
+    font-family: 'ChaletComprime';
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.secoes .cartoes {
+    display: flex;
+    background-color: black;
+    border-radius: 20px;
+    font-family: 'ChaletComprime';
+    min-height: 578px;
+}
+
+.secoes .cartao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    border-radius: 10px;
+    padding: 80px;
+    gap: 40px;
+}
+
+.secoes .cartao .img-secoes {
+    border-radius: 20px;
+    border: 5px;
+    border-style:solid
+}
+
+.secoes .plataformas-caes, .btn-plataformas-gatos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+}
+
+.secoes .btn-plataforma-caes .plataformas-caes {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: all .3s ease-in;
+    display: none;
+    opacity: 0;
+}
+
+.secoes .btn-plataforma-gatos .plataformas-gatos {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: all .3s ease-in;
+    display: none;
+    opacity: 0;
+}
+
+.secoes .btn-plataforma-caes .plataformas-caes.ativo {
+    display: flex;  
+    opacity: 1;
+}
+
+.secoes .btn-plataforma-gatos .plataformas-gatos.ativo {
+    display: flex;  
+    opacity: 1;
+}
+
+.secoes .btn-plataforma-caes .plataformas-caes li{
+    border-radius: 20px;
+}
+
+.secoes .btn-plataforma-gatos .plataformas-gatos li{
+    border-radius: 20px;
+}
+
+.secoes .btn-plataforma-caes .plataformas-caes li:nth-child(1) {
+    border: 1px solid #09202e;
+}
+
+.secoes .btn-plataforma-caes .plataformas-caes li:nth-child(1):hover {
+    background-color: #09202e
+}
+
+.secoes .btn-plataforma-caes .plataformas-caes li:nth-child(2) {
+    border: 1px solid #09202e;
+}
+
+.secoes .btn-plataforma-caes .plataformas-caes li:nth-child(2):hover {
+    background-color: #09202e;
+}
+
+.secoes .btn-plataforma-caes .plataformas-caes li:nth-child(3) {
+    border: 1px solid #09202e;
+}
+
+.secoes .btn-plataforma-caes .plataformas-caes li:nth-child(3):hover {
+    background-color: #09202e;
+}
+
+
+.secoes .btn-plataforma-gatos .plataformas-gatos li:nth-child(1) {
+    border: 1px solid #09202e;
+}
+
+.secoes .btn-plataforma-gatos .plataformas-gatos li:nth-child(1):hover {
+    background-color: #09202e;
+}
+
+.secoes .btn-plataforma-gatos .plataformas-gatos li:nth-child(2) {
+    border: 1px solid #09202e;
+}
+
+.secoes .btn-plataforma-gatos .plataformas-gatos li:nth-child(2):hover {
+    background-color: #09202e;
+}
+
+.secoes .btn-plataforma-gatos .plataformas-gatos li:nth-child(3) {
+    border: 1px solid #09202e;
+}
+
+.secoes .btn-plataforma-gatos .plataformas-gatos li:nth-child(3):hover {
+    background-color: #09202e;
+}
