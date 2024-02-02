@@ -37,9 +37,11 @@ main{
 }
 
 main .texto-fad-vet{
+    width: 100%;
     padding: 20px;
     border: 1px solid yellow;
     margin: 20px;
+    font-family: 'Open Sans';
 }
 
 #searchbar{
@@ -61,10 +63,11 @@ input{
     border: 1px solid #ddd;
     margin: 15px;
     border-radius: 5px;
+    font-family: 'Open Sans';
 }
 
 #lista-de-resultados{
-    width: 49.5%;
+    width: 48%;
     list-style-type: none;
     margin: 0;
     padding-left: 15px;
@@ -78,6 +81,7 @@ input{
     display: flex;
     align-items: center;
     text-decoration: none;
+    font-family: 'Open Sans';
     font-size: 25px;
     border: 1px solid #ddd;
     background-color: #01161b;
@@ -85,7 +89,6 @@ input{
     padding-left: 30px;
     border-radius: 5px;
     display:none;
-    text-transform: uppercase;
 }
 
 #lista-de-resultados li:hover{

@@ -32,15 +32,15 @@ body {
 
 .cabecalho .menu {
     display: flex;
-    gap: 30px;
+    gap: 25px;
 }
 
 .cabecalho .menu li a {
-    padding: 30px;
+    padding: 25px;
     color: #e8e8e8;
     font-weight: bolder;
     font-size: 15px;
-    font-family: 'Chalet';
+    font-family: 'Open Sans';
 }
 
 .cabecalho .menu li a:hover {
@@ -92,12 +92,12 @@ body {
 }
 
 .home .informacoes .titulo {
-    font-family: 'ChaletComprime';
-    font-size: 55px;
+    font-family: 'Open Sans';
+    font-size: 40px;
 }
 
 .home .informacoes .texto {
-    font-family: 'Chalet';
+    font-family: 'Open Sans';
     font-size: 18px;
     line-height: 1.6;
 }
@@ -106,13 +106,14 @@ body {
     background-color: rgba(255, 255, 255, .1 );
     border: 0.5px solid #fff;
     border-radius: 4px;
-    font-family: 'ChaletComprime';
-    font-size: 28px;
+    font-family: 'Open Sans';
+    font-size: 25px;
     text-align: center;
     padding: 20px 40px;
     text-transform: uppercase;
     width: 50%;
     transition: all .3s ease-in;
+    font-weight: bolder;
 }
 
 .btn-plataforma-caes, .btn-plataforma-gatos{
@@ -149,7 +150,7 @@ body {
 }
 
 .secoes .titulo {
-    font-family: 'ChaletComprime';
+    font-family: 'Open Sans';
     font-size: 50px;
     font-weight: 700;
     margin-bottom: 50px;
@@ -159,7 +160,7 @@ body {
     display: flex;
     background-color: black;
     border-radius: 20px;
-    font-family: 'ChaletComprime';
+    font-family: 'Open Sans';
     min-height: 578px;
 }
 
@@ -216,13 +217,18 @@ body {
     opacity: 1;
 }
 
+.secoes .plataformas-caes, .plataformas-gatos{
+    font-family: 'Open Sans';
+    font-weight: bolder;
+}
+
 .secoes .btn-plataforma-caes .plataformas-caes li{
     border-radius: 20px;
     height: 30px;
 }
 
 .secoes .btn-plataforma-caes .plataformas-caes li p{
-    margin-top: 5px;
+    margin-top: 2px;
     font-size: 18px;
 }
 
@@ -232,7 +238,7 @@ body {
 }
 
 .secoes .btn-plataforma-gatos .plataformas-gatos li p{
-    margin-top: 5px;
+    margin-top: 2px;
     font-size: 18px;
 }
 
