@@ -23,15 +23,21 @@
         </div>
     </header>
     <main>
-        <input id="searchbar" type="text" name="searchbar"
-            placeholder="Sintomas, achados laboratoriais, achados clínicos..." onkeyup="search()">
-        <ul id="lista-de-resultados">
-            <li class="sinais">vômito</li>
-            <li class="sinais">diarréia</li>
-            <li class="sinais">febre</li>
-            <li class="sinais">cialorréia</li>
-            <li class="sinais">ataxia</li>
-        </ul>
+        <div class="pesquisa">
+            <input id="searchbar" type="text" name="searchbar"
+                placeholder="Sintomas, achados laboratoriais, achados clínicos..." onkeyup="search()" onclick="search()"
+                onfocus="document.getElementById('lista-de-resultados').style.display = 'block';">
+            <ul id="lista-de-resultados">
+                <li class="sinais" onclick="selectSinal(this.textContent)">vômito</li>
+                <li class="sinais" onclick="selectSinal(this.textContent)">diarréia</li>
+                <li class="sinais" onclick="selectSinal(this.textContent)">febre</li>
+                <li class="sinais" onclick="selectSinal(this.textContent)">cialorréia</li>
+                <li class="sinais" onclick="selectSinal(this.textContent)">ataxia</li>
+            </ul>
+            <div id="selected-sinais-container">
+                <div id="selected-sinais"></div>
+            </div>
+        </div>
         <div class="texto-fad-vet">
             <h1>Ferramenta Auxiliar de Diagnóstico Veterinário | FAD-Vet</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi alias incidunt harum nostrum ab ea

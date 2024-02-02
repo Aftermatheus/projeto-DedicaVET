@@ -14,16 +14,16 @@ body {
 }
 
 
-.cabecalho .logo a{
+.cabecalho .logo a {
     display: flex;
     gap: 15px;
 }
- 
+
 .cabecalho .logo .logo-do-site {
     max-height: 100px;
 }
 
-.cabecalho .logo hr{
+.cabecalho .logo hr {
     max-height: 89px;
 }
 
@@ -31,20 +31,26 @@ body {
     max-height: 100px;
 }
 
-main{
+main {
+    width: 100%;
     display: flex;
     flex-direction: row;
 }
 
-main .texto-fad-vet{
-    width: 100%;
+main .pesquisa {
+    width: 50%;
+}
+
+main .texto-fad-vet {
+    width: 50%;
     padding: 20px;
     border: 1px solid yellow;
-    margin: 20px;
+    margin: 16px;
+    margin-left: 50px;
     font-family: 'Open Sans';
 }
 
-#searchbar{
+#searchbar {
     width: 100%;
     background-color: #fff;
     display: flex;
@@ -55,7 +61,7 @@ main .texto-fad-vet{
     top: 1px;
 }
 
-input{
+input {
     width: 100%;
     height: 50px;
     padding-left: 20px;
@@ -66,8 +72,8 @@ input{
     font-family: 'Open Sans';
 }
 
-#lista-de-resultados{
-    width: 48%;
+#lista-de-resultados {
+    width: 48.5%;
     list-style-type: none;
     margin: 0;
     padding-left: 15px;
@@ -77,7 +83,7 @@ input{
     top: 148px;
 }
 
-#lista-de-resultados li{
+#lista-de-resultados li {
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -88,11 +94,56 @@ input{
     padding: 12px;
     padding-left: 30px;
     border-radius: 5px;
-    display:none;
+    display: none;
 }
 
-#lista-de-resultados li:hover{
+#lista-de-resultados li:hover {
     background: white;
     color: black;
 }
 
+
+
+#selected-sinais-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    max-width: 100%;
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-right: 0%;
+}
+
+.selected-sinal-box {
+    color: white;
+    background-color: green;
+    padding: 5px 10px;
+    margin-right: 15px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    font-family: 'Open Sans';
+}
+
+.close-button {
+    background-color: #ccc;
+    color: black;
+    font-weight: bold;
+    border: none;
+    padding: 0 5px;
+    margin-left: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#selected-sinais {
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.selected-sinal-box {
+    white-space: nowrap;
+}
