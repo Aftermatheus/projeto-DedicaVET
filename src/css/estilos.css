@@ -218,10 +218,22 @@ body {
 
 .secoes .btn-plataforma-caes .plataformas-caes li{
     border-radius: 20px;
+    height: 30px;
+}
+
+.secoes .btn-plataforma-caes .plataformas-caes li p{
+    margin-top: 5px;
+    font-size: 18px;
 }
 
 .secoes .btn-plataforma-gatos .plataformas-gatos li{
     border-radius: 20px;
+    height: 30px;
+}
+
+.secoes .btn-plataforma-gatos .plataformas-gatos li p{
+    margin-top: 5px;
+    font-size: 18px;
 }
 
 .secoes .btn-plataforma-caes .plataformas-caes li:nth-child(1) {
