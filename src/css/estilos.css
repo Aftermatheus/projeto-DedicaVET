@@ -22,6 +22,10 @@ body {
     max-height: 100px;
 }
 
+.cabecalho .logo hr{
+    max-height: 89px;
+}
+
 .cabecalho .logo .logo-escrita {
     max-height: 100px;
 }
